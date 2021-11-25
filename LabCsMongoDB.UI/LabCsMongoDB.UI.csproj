@@ -6,4 +6,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LabCsMongoDB.Data\LabCsMongoDB.Data.csproj" />
+  </ItemGroup>
+
 </Project>

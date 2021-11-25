@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabCsMongoDB", "LabCsMongoDB\LabCsMongoDB.csproj", "{BD51A896-4FE4-42A8-A856-7D8941682262}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabCsMongoDB.UI", "LabCsMongoDB.UI\LabCsMongoDB.UI.csproj", "{BD51A896-4FE4-42A8-A856-7D8941682262}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabCsMongoDB.Data", "LabCsMongoDB.Data\LabCsMongoDB.Data.csproj", "{B65DD9C5-5F60-4FA3-9794-2F67D55413AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabCsMongoDB.Data", "LabCsMongoDB.Data\LabCsMongoDB.Data.csproj", "{B65DD9C5-5F60-4FA3-9794-2F67D55413AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
