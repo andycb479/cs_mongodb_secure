@@ -16,7 +16,7 @@
                <Button Height="50" Content="Fetch Users" FontSize="14" FontFamily="Consolas" Margin="5,0,5,0" Padding="10,1,10,1" Click="FetchDataHandler"/>
                <Button Height="50" Content="Add User" FontSize="14" FontFamily="Consolas" Margin="5,0,5,0" Padding="10,1,10,1" Click="AddTaskHandler"/>
           </DockPanel>
-          <ListBox Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Margin="10,0,10,0"  Name="TaskList">
+          <ListBox Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Margin="10,0,10,0"  Name="UserList">
           </ListBox>
      </Grid>
 </Window>

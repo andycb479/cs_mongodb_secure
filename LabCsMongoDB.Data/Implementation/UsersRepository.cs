@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Security;
 using System.Threading.Tasks;
 using LabCsMongoDB.Data.Encryption;
@@ -29,9 +31,18 @@ namespace LabCsMongoDB.Data.Implementation
                await InsertOneAsync(userWithEncryptedData);
           }
 
-          public void GetUserWithEncryptedData()
+          public List<User> GetUsersWithEncryptedData()
           {
-
+               var usersEncrypted = AsQueryable().ToList();
+               var usersDecrypted = usersEncrypted.Select(x => new User
+               {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Password = Encryptor.Decrypt(x.Password),
+                    CardNumber = Encryptor.Decrypt(x.CardNumber),
+                    Email = Encryptor.Decrypt(x.Email)
+               }).ToList();
+               return usersDecrypted;
           }
 
           private static SecureString GetPassword()
